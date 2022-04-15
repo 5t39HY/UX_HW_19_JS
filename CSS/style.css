@@ -3,6 +3,7 @@
     padding: 0; 
   }
   .sidebar {
+    background-color: tan;
     height: 100%;
     width: 150px;
     position: fixed;
@@ -29,11 +30,19 @@
   }
 
   .sidebar a:hover{
+    cursor: pointer;
     font-display: bold;
     color: brown;
     text-transform: lowercase;
   }
   
+  .tools{
+    margin: 15px 0;
+    border: 2px dotted orange;
+    display: grid;
+    
+  }
+
   break.padding {
   padding: 10px;
 }
@@ -106,9 +115,10 @@
   
   
   .learnAbout {
+    border: 2px dotted orange;
     width: 100%;
     padding: 40px;
-    height: 100%;
+    height: 50%;
     margin:0 auto;
     display: flex;
     flex-direction: column;
@@ -126,8 +136,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: 15px 0;
   }
-  .helpHandsContent {
+
+  /*.helpHandsContent {
     background-color: tan;
     padding: 30px;
     text-align: center;
@@ -136,7 +148,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-  }
+  }*/
 
   .workTwo {
     background: url(../images/doeimg.png);
@@ -145,10 +157,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative; 
+    margin: 15px 0;
   }
 
-  .deptOfEdContent {
+ /* .deptOfEdContent {
     background-color: tan;
     padding: 30px;
     text-align: center;
@@ -157,7 +170,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-  }
+  }*/
 
   .workThree {
     background: url(../images/beeimg.png);
@@ -167,6 +180,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative; 
+    margin-bottom: 15px;
   }
 
   .portlandUrbanContent {
@@ -193,7 +207,7 @@ button{
   border: 2px solid white;
   border-radius: 10px;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -206,7 +220,41 @@ button{
     color: white;
 }
 
+@media only screen and (max-width: 800px) { 
+  h1 { 
+    color: green
+  } 
+
+  .learnAbout { 
+    height: 100%; 
+
+  } 
+
+  .portlandUrbanContent { 
+    width: 80%; 
+    
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px;
+}
+.userEmpathyCard{
+  width: 100%
+}
+.interviewCard{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.userResearchCard{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 
   
-
+}
 
