@@ -203,6 +203,28 @@
     background-color: orange;
     color: brown;
 }
+
+.reachOut h1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px 15px;
+}
+
+.reachOut div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px 15px;
+  border: 2px solid orange;
+  padding: 10px;
+}
+
+button.viewAll{
+  display: grid;
+  border: 5px solid tan;
+}
+
 button{
   background-color: yellow;
   border: 2px solid white;
@@ -221,14 +243,10 @@ button{
     color: white;
 }
 
-@media only screen and (max-width: 800px) { 
-  h1 { 
-    color: green
-  } 
-
+@media only screen and (max-width: 1000px) { 
+  
   .learnAbout { 
     height: 100%; 
-
   } 
 
   .portlandUrbanContent { 
@@ -255,7 +273,6 @@ button{
   margin-bottom: 15px;
 }
 
-
-  
 }
+
 
